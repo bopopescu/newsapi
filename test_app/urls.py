@@ -17,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 from rest_framework import routers
+from django.conf import settings
 
 from news.views import NewsViewSet, GetLanguageViewSet
 
