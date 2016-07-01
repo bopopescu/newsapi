@@ -4,7 +4,7 @@ Setting up project
 
 1.Clone the project
 
-    git clone <url to the git repository>
+    git clone https://github.com/pnija/newsapi.git
 
 2.Create a virtual environment for the project anywhere in the system
 
