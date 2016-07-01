@@ -18,6 +18,7 @@ from django.contrib import admin
 
 from rest_framework import routers
 from django.conf import settings
+from django.conf.urls import patterns,url
 
 from news.views import NewsViewSet, GetLanguageViewSet
 
