@@ -30,3 +30,9 @@ urlpatterns = [
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^languages/', GetLanguageViewSet.as_view({'get': 'list'}), name='languages')
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += patterns('',
+            (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT, 'show_indexes':True}),
+        )
